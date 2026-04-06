@@ -28,6 +28,7 @@
   --secondary-link-border: #444646;
   --secondary-link-hover: #f0f0f0;
   --dashed-border: #3a3c3d;
+  --grid-line: rgba(255, 255, 255, 0.08);
   --testimonial-quote: #cccccc;
   --cite: #777777;
   --footer-bg: #161718;
@@ -71,6 +72,7 @@
   --secondary-link-border: #d6d6d8;
   --secondary-link-hover: #1d1d1f;
   --dashed-border: #d6d6d8;
+  --grid-line: rgba(15, 23, 42, 0.07);
   --testimonial-quote: #424245;
   --cite: #98989d;
   --footer-bg: #1d1d1f;
@@ -112,6 +114,7 @@
     --secondary-link-border: #d6d6d8;
     --secondary-link-hover: #1d1d1f;
     --dashed-border: #d6d6d8;
+    --grid-line: rgba(15, 23, 42, 0.07);
     --testimonial-quote: #424245;
     --cite: #98989d;
     --footer-bg: #1d1d1f;
@@ -313,6 +316,21 @@ nav {
   margin: 0 auto;
   padding: 100px 24px 80px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 32px 32px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 0%, transparent 85%);
+  mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 0%, transparent 85%);
+  pointer-events: none;
 }
 
 .hero h1 {
