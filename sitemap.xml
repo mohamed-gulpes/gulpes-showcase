@@ -1,26 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gulpes.com/</loc>
-    <lastmod>2026-04-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gulpes.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gulpes.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gulpes.com/"/>
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://gulpes.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gulpes.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gulpes.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gulpes.com/"/>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://gulpes.com/privacy.html</loc>
-    <lastmod>2026-04-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gulpes.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gulpes.com/fr/privacy.html"/>
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://gulpes.com/fr/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gulpes.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gulpes.com/fr/privacy.html"/>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://gulpes.com/terms.html</loc>
-    <lastmod>2026-04-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gulpes.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gulpes.com/fr/terms.html"/>
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://gulpes.com/fr/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gulpes.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gulpes.com/fr/terms.html"/>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://med.gulpes.com/</loc>
-    <lastmod>2026-04-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://med.gulpes.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gulpes.com/fr/med.html"/>
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gulpes.com/fr/med.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://med.gulpes.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gulpes.com/fr/med.html"/>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
