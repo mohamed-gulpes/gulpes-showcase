@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /css/
+Disallow: /img/
+
+Sitemap: https://gulpes.com/sitemap.xml
