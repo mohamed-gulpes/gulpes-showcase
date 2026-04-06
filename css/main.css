@@ -16,7 +16,7 @@
   --accent-bg: #bb334f;
   --accent-text: #ffffff;
   --accent-hover: #a32b44;
-  --header-bg: rgba(30, 32, 33, 0.96);
+  --header-bg: rgba(30, 32, 33, 0.82);
   --header-border: #2a2c2d;
   --nav-link: #999999;
   --nav-link-hover: #f0f0f0;
@@ -59,7 +59,7 @@
   --btn-alt-bg: #1d1d1f;
   --btn-alt-text: #ffffff;
   --btn-alt-hover: #333336;
-  --header-bg: rgba(245, 245, 247, 0.96);
+  --header-bg: rgba(245, 245, 247, 0.82);
   --header-border: #d6d6d8;
   --nav-link: #6e6e73;
   --nav-link-hover: #1d1d1f;
@@ -100,7 +100,7 @@
     --btn-alt-bg: #1d1d1f;
     --btn-alt-text: #ffffff;
     --btn-alt-hover: #333336;
-    --header-bg: rgba(245, 245, 247, 0.96);
+    --header-bg: rgba(245, 245, 247, 0.82);
     --header-border: #d6d6d8;
     --nav-link: #6e6e73;
     --nav-link-hover: #1d1d1f;
