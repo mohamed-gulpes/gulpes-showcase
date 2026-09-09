@@ -1,4 +1,4 @@
-# CLAUDE.md — Gulpes website (gulpes.com)
+# CLAUDE.md: Gulpes website (gulpes.com)
 
 ## Project overview
 
@@ -13,13 +13,13 @@ site is bilingual: English at the root, French under `fr/`.
 - Single global stylesheet: `css/main.css` (~1100 lines) using CSS custom
   properties for theming and BEM-ish component class names.
 - Fonts: Google Fonts (Roboto) loaded via `<link>`.
-- Inline `<script>` only — the theme toggle (dark/light). There are **no** JS
+- Inline `<script>` only: the theme toggle (dark/light). There are **no** JS
   files and **no** build/transpile step.
 - Images are `.webp` / `.svg` / `.gif` in `img/`.
 
 ## How to preview / build
 
-There is **no build step** — the files are served as-is. Preview with any
+There is **no build step**: the files are served as-is. Preview with any
 static server, e.g.:
 
 ```bash
@@ -34,7 +34,7 @@ switching behave like production.
 
 Static hosting (the `.htaccess` targets Apache/LiteSpeed, e.g. Hostinger).
 Deploy by copying all files to the web root. **Caching:** `.htaccess` sets
-no-cache headers, but a CDN may still cache — so after changing `css/main.css`
+no-cache headers, but a CDN may still cache, so after changing `css/main.css`
 or any image, **bump the `?v=` query string** on its `<link>`/`<img>` URL in
 every HTML file that references it (search for `?v=`).
 
@@ -77,7 +77,7 @@ robots.txt, sitemap.xml # SEO
 
 ## Rules
 
-- Match the existing markup and CSS patterns — vanilla HTML/CSS, no framework,
+- Match the existing markup and CSS patterns: vanilla HTML/CSS, no framework,
   no new dependencies or build tooling.
 - Keep changes accessible (semantic tags, alt text, aria labels) and responsive
   (test at 768px and 480px).

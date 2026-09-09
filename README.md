@@ -1,26 +1,26 @@
-# Gulpes — Official Website
+# Gulpes, Official Website
 
 Source code for [gulpes.com](https://gulpes.com), the brand site for Gulpes digital products.
 
 ## Overview
 
-Gulpes is a product studio that designs and ships practical tools for personal growth, motivation, and real life. This repository contains the static website that serves as the public-facing brand hub — showcasing products, services, and the team behind Gulpes.
+Gulpes is a product studio that designs and ships practical tools for personal growth, motivation, and real life. This repository contains the static website that serves as the public-facing brand hub: showcasing products, services, and the team behind Gulpes.
 
 ## Pages
 
 | File | URL | Purpose |
 |------|-----|---------|
-| `index.html` | gulpes.com | Homepage — products, testimonials, services, founder |
+| `index.html` | gulpes.com | Homepage: products, testimonials, services, founder |
 | `med.html` | med.gulpes.com | Mohamed Douaré's profile page |
 | `privacy.html` | gulpes.com/privacy.html | Privacy policy |
 | `terms.html` | gulpes.com/terms.html | Terms & conditions |
 
 ## Features
 
-- **Dark / Light mode** — defaults to dark, toggleable with OS preference detection and `localStorage` persistence
-- **SEO-optimized** — Open Graph, Twitter Cards, JSON-LD structured data (Organization, SoftwareApplication, Person, WebSite), canonical URLs, sitemap, robots.txt
-- **Fully static** — no build step, no framework, no dependencies
-- **Responsive** — mobile-first layout with media queries
+- **Dark / Light mode**: defaults to dark, toggleable with OS preference detection and `localStorage` persistence
+- **SEO-optimized**: Open Graph, Twitter Cards, JSON-LD structured data (Organization, SoftwareApplication, Person, WebSite), canonical URLs, sitemap, robots.txt
+- **Fully static**: no build step, no framework, no dependencies
+- **Responsive**: mobile-first layout with media queries
 
 ## Structure
 
@@ -52,4 +52,4 @@ This is a fully static site. Deploy by copying all files to any web server or st
 
 ## License
 
-All rights reserved — Gulpes 2026.
+All rights reserved, Gulpes 2026.
