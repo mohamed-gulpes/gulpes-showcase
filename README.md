@@ -20,6 +20,7 @@ Gulpes is a product studio that designs and ships practical tools for personal g
 - **Dark / Light mode**: defaults to dark, toggleable with OS preference detection and `localStorage` persistence
 - **SEO-optimized**: Open Graph, Twitter Cards, JSON-LD structured data (Organization, SoftwareApplication, Person, WebSite), canonical URLs, sitemap, robots.txt
 - **Fully static**: no build step, no framework, no dependencies
+- **GitHub Pages**: deployed from `main` to [gulpes.com](https://gulpes.com) by `.github/workflows/pages.yml`
 - **Responsive**: mobile-first layout with media queries
 
 ## Structure

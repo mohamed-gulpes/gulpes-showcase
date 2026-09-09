@@ -1,6 +1,13 @@
-# Cache control (Apache / LiteSpeed PHP stack). Hostinger often puts Nginx or a CDN in
-# front — if headers still have no effect, bump ?v= on css/img in HTML files
-# and purge cache in hPanel (LiteSpeed Cache / Cache Manager).
+# Legacy host only (Hostinger / LiteSpeed). Production is now GitHub Pages, which
+# ignores this file. It stays so the old host keeps behaving while DNS moves over.
+
+# med.gulpes.com is retired: the profile lives at gulpes.com/med.html.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^med\.gulpes\.com$ [NC]
+  RewriteRule ^.*$ https://gulpes.com/med.html [R=301,L]
+</IfModule>
+
 <IfModule mod_headers.c>
   <FilesMatch "\.(html|htm)$">
     Header always set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"

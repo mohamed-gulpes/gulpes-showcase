@@ -1,0 +1,41 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Publish only the public site: no CLAUDE.md, README.md or .htaccess.
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          cp index.html med.html privacy.html terms.html robots.txt sitemap.xml CNAME .nojekyll _site/
+          cp -r css img _site/
+          mkdir -p _site/fr && cp fr/index.html fr/med.html fr/privacy.html fr/terms.html _site/fr/
+          find _site -type f | sort
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
