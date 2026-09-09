@@ -32,24 +32,37 @@ switching behave like production.
 
 ## Deployment
 
-Static hosting (the `.htaccess` targets Apache/LiteSpeed, e.g. Hostinger).
-Deploy by copying all files to the web root. **Caching:** `.htaccess` sets
-no-cache headers, but a CDN may still cache, so after changing `css/main.css`
-or any image, **bump the `?v=` query string** on its `<link>`/`<img>` URL in
-every HTML file that references it (search for `?v=`).
+**GitHub Pages** on `KMDgit/gulpes-showcase`, custom domain **gulpes.com**
+(`CNAME`). `.github/workflows/pages.yml` runs on every push to `main`: it
+assembles `_site/` with the public files only (no `CLAUDE.md`, `README.md` or
+`.htaccess`) and deploys. **Never auto-merge to `main`**: promotion to prod is
+a manual, human-reviewed PR from `dev`.
+
+When you add a page or a top-level asset directory, **add it to the `Assemble
+site` step** or it will not be published. `.nojekyll` keeps Pages from running
+Jekyll over the files.
+
+`.htaccess` is dead weight on Pages; it only matters while the legacy Hostinger
+host still answers (it 301s the retired `med.gulpes.com` to `gulpes.com/med.html`).
+
+**Caching:** after changing `css/main.css` or any image, **bump the `?v=` query
+string** on its `<link>`/`<img>` URL in every HTML file that references it
+(search for `?v=`).
 
 ## Structure
 
 ```
 index.html              # EN homepage
-med.html                # Founder profile (served at med.gulpes.com)
+med.html                # Founder profile (gulpes.com/med.html; full portfolio = douare.dev)
 privacy.html            # Privacy policy (EN)
 terms.html              # Terms & conditions (EN)
 fr/                     # French mirror: index/med/privacy/terms.html
 css/main.css            # ALL styles (theme vars, layout, components)
 img/                    # logos, icons, assets (.webp/.svg/.gif)
 robots.txt, sitemap.xml # SEO
-.htaccess               # Apache/LiteSpeed cache headers
+CNAME, .nojekyll        # GitHub Pages: custom domain + skip Jekyll
+.github/workflows/      # pages.yml (deploy to GitHub Pages on push to main)
+.htaccess               # Legacy Hostinger host only (ignored by Pages)
 ```
 
 ## Conventions actually used

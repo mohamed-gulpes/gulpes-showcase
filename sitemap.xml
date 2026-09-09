@@ -52,8 +52,8 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://med.gulpes.com/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://med.gulpes.com/"/>
+    <loc>https://gulpes.com/med.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gulpes.com/med.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://gulpes.com/fr/med.html"/>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -61,7 +61,7 @@
   </url>
   <url>
     <loc>https://gulpes.com/fr/med.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://med.gulpes.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gulpes.com/med.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://gulpes.com/fr/med.html"/>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
